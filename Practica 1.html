@@ -1,0 +1,78 @@
+<html>
+    <head>
+        <title>Formulario</title>
+<style>
+body {
+font-size: 16px;
+font-family: 'Open Sans', sans-serif;
+}
+.content {
+width: 960px;
+margin: 0 auto;
+margin-top: 50px;
+}
+.col-1,
+.col-2 {
+display: inline-block;
+float: left;
+}
+.col-1 {
+width: 28%;
+}
+.col-2 {
+width: 70%;
+}
+label,
+input {
+display: block;
+margin-botton: 8px;
+}
+label {
+font-size: .8em;
+margin-bottom: 0;
+}
+input[type="text"] {
+width: 75%;
+padding: 5px;
+}
+h2 {
+margin-top: 0;
+}
+</style>
+    </head>
+    <body>
+
+        <form action="mailto:tunombre@tuservidor.com" method="post" target="_self">
+
+            <table>
+                <td align=right>Nombre Empleado:</td>
+                <td><input type="text" size=36 name="nombre"></td>
+                <tr><td align=right>Direccion e-mail:</td>
+                <td><input type="text" size=36 name="direccion"></td>
+                <tr><td align=right>Puesto de Trabajo</td>
+                <td><input type="text" size=36 name="trabajo"></td>
+                <tr><td align=right>Hora de Trabajo</td>
+                <td><script type="text/javascript">
+                            var horas;
+                            var sueldo;
+                            horas = prompt('Ingrese un numero de horas', '');
+                            sueldo = prompt('Ingrese el sueldo por horas', '');
+                            var res;
+                            res = horas * sueldo;
+			document.write(horas);
+			</script>
+                            
+    			</td>
+                <tr><td align=right>Compensacion</td>
+                <td><script type="text/javascript">
+			document.write(res);
+			</script>	</td>
+		
+    		</table>
+
+                        
+
+                        <input type="reset" value="borrar todo"> <input type="submit" value="enviar">
+		</form>
+		</body>
+</html>

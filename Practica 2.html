@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script
+src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+    $(document).ready(function () {
+        $("#boton").click(function () {
+            $("#p1").text("GAAA");
+            $("#p2").text("ultraga");
+            $("#p3").text("PETAGA");
+        });
+    });
+
+    $(document).ready(function () {
+        $("#remove").click(function () {
+            $("#p1").text("");
+            $("#p2").text("");
+            $("#p3").text("");
+        });
+    });
+    
+</script>
+</head>
+<body style="background-color: black">
+   
+
+<p id="p1" style=" color:red">  </p>
+<p id="p2" style=" color:yellow">  </p>
+<p id="p3" style=" color:lightcoral">  </p>
+<button id="boton"> Agregar</button>
+<button id="remove"> Eliminar</button>
+
+</body>
+</html>
+
